@@ -1,0 +1,22 @@
+[ {
+  "xpath" : "/profile/inbound/rate-limit-by-key/@calls",
+  "message" : "This attribute cannot be a hardcoded value",
+  "type" : "BUG",
+  "severity" : "BLOCKER",
+  "effortMinutes" : 10,
+  "filename" : "policy.xml"
+}, {
+  "xpath" : "/profile/inbound/rate-limit-by-key/@renewal-period",
+  "message" : "This attribute cannot be a hardcoded value",
+  "type" : "BUG",
+  "severity" : "BLOCKER",
+  "effortMinutes" : 10,
+  "filename" : "policy.xml"
+}, {
+  "xpath" : "/profile",
+  "message" : "quota-by-key must be present",
+  "type" : "BUG",
+  "severity" : "BLOCKER",
+  "effortMinutes" : 10,
+  "filename" : "policy.xml"
+} ]

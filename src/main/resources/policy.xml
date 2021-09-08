@@ -1,0 +1,6 @@
+<profile>
+    <inbound>
+        <rate-limit-by-key calls="ChiefDevelopmentOfficeJenkinsAsService-RateLimit}}" renewal-period="ChiefDevelopmentOfficeJenkinsAsService-renewal-period}}" counter-key="@(context.Subscription.Key)" increment-condition="@(context.Response.StatusCode &gt;= 200 &amp;&amp; context.Response.StatusCode &lt; 300)" /><!-- Noncompliant {{This attribute cannot be a hardcoded value}} {{This attribute cannot be a hardcoded value}}-->
+        <quota-by-key calls="{{ChiefDevelopmentOfficeJenkinsAsService-Quota}}" renewal-period="{{ChiefDevelopmentOfficeJenkinsAsService-renewal-period2}}" counter-key="@(context.Subscription.Key)" increment-condition="@(context.Response.StatusCode &gt;= 200 &amp;&amp; context.Response.StatusCode &lt; 400)" />
+    </inbound>
+</profile>
